@@ -20,7 +20,7 @@ INDEX PAGE
 #logo {
   width: 1000px;
   position: absolute;
-  left: 46%;
+  left: 36%;
   height: 150px;
   letter-spacing: -2px;
   margin-left: 25%;
@@ -68,7 +68,6 @@ td {
   position: relative;
   background-color:orange;
   box-shadow: 10px;
-  padding:20px;
   width: 300px;
   height: 300px;
   border-spacing: 50px;
