@@ -18,7 +18,7 @@ INDEX PAGE
 }
 
 #logo {
-  width: 43%;
+  width: 1000px;
   height: 150px;
   padding-left: 30px;
   letter-spacing: -2px;
@@ -54,7 +54,7 @@ Contact
   position: absolute;
   left: 10%;
   top: 30%;
-  border: 10px solid black;
+
 }
 
 table {
@@ -68,7 +68,8 @@ td {
   box-shadow: 10px;
   padding:20px;
   margin-top: 50px;
-  border: 5px solid orange;
+  margin-right: 20px;
+
 
 }
 
