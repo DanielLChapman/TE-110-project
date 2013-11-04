@@ -60,12 +60,14 @@ Contact
 
 table {
   top: 5%;
-  padding: 20px;
   position: relative;
 }
 
 td {
+  position: relative;
   background-color:orange;
+  box-shadow: 10px;
+  padding:20px;
   border: 5px solid orange;
 
 }
