@@ -1,0 +1,323 @@
+body {
+  background-image: url('/img/greyLinen.jpg');
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*---------------
+HEADER
+INDEX PAGE
+----------------*/
+
+#top {
+  height: 150px;
+}
+
+#logo {
+  float: left;
+  width: 310px;
+  height: 150px;
+  padding-left: 30px;
+  letter-spacing: -2px;
+}
+
+#logo a{
+  color: white;
+  text-decoration: none;
+}
+
+#menu {
+  float: right;
+  width: 900px;
+  height: 100px;
+  list-style: none;
+  line-height: normal;
+  overflow: hidden;
+  padding-right: 30px;
+}
+
+#menu li {
+  top: 0;
+  padding: 5px;
+  float: left;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  transition: padding;
+  transition-duration-duration: 1s;
+  -webkit-transition: padding;
+  -webkit-transition-duration: 1s;
+  -moz-transition: padding;
+  -moz-transition-duration: 1s;
+  -o-transition: padding;
+  -o-transition-duration: 1s;
+  letter-spacing: 1px;
+  list-style-type: none;
+  text-transform: uppercase;
+  display: block;
+  font-size: 1.8em;
+}
+
+#menu li:hover {
+  text-decoration: none;
+  background: orange;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding: 15px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: white;
+}
+
+h3 {
+  position: relative;
+  margin: 0;
+  color: white;
+  font-family: Impact;
+  font-weight: 200;
+  font-size: 3em;
+}
+
+* {
+  /*overflow: hidden;*/
+}
+/*------------
+body - index.
+---------------*/
+
+#myGallery img{
+  overflow: hidden;
+  position: relative;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  height: 600px;
+  display:none;
+  left: -10%;
+  border: 20px solid white;
+}
+
+#myGallery img.active {
+  display: block;
+}
+
+/*----------------
+BODY LOCATION
+-------------------*/
+
+.locations {
+  background-color: white;
+  width: 550px;
+  border: 1px solid #E7EBED;
+  opacity:.9;
+  float: left;
+  left: -3%;
+  border-radius: 20px;
+  padding: 50px 50px 30px 50px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  font-family: sans-serif;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.locations h1 {
+  font-size: 1.8em;
+  letter-spacing: 2;
+  font-weight: 200px;
+}
+
+
+.location .address {
+  font-size: 1.2em;
+}
+
+.location .dates {
+  float: left;
+  font-size: .9em;
+  font-family: impact;
+}
+
+.location .website a {
+  font-size: 1.2em;
+}
+
+.location .description {
+  color: white;
+  border: 1px solid black;
+  font-family: sans-serif;
+}
+.container {
+  width: 800px;
+  float: left;
+  margin-bottom: 40px;
+  padding: 50px 50px 30px 50px;
+}
+
+.sidebar {
+  float: right;
+  width: 450px;
+  padding-top: 5em;
+  font-family: sans-serif;
+}
+.sidebar ul {
+  margin: 0;
+  padding-bottom: 20px;
+  list-style: none;
+}
+
+.sidebar ul h2 {
+  font-size: 2em;
+  font-weight: 200px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: white;
+  font-family: impact;
+}
+
+.sidebar li ul {
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #7B7B7B;
+  font-family: cursive;
+  border-bottom: 2px solid black;
+}
+
+.sidebar li a:hover {
+  text-decoration: underline;
+  padding: 15px;
+}
+
+.sidebar li li {
+  line-height: 40px;
+  margin: 0;
+  display: block;
+  font-style: italic;
+  font-size: 1.2em;
+  padding: 0;
+}
+
+/*-----------------
+Body
+Contact
+------------------*/
+.location .email {
+  font-size: 1.2em;
+}
+
+.sidebar #profile {
+  width: 450px;
+  margin-top: -50px;
+  float: right;
+  height: 300px;
+  position: relative;
+  border: 10px solid white;
+  margin-bottom: 10px;
+}
+
+/* portfolio
+*/
+
+.portfolio-wrapper {
+  background: white;
+  width: 1300px;
+  height: 800px;
+  margin-top: -10px;
+  border-radius: 10px;
+  opacity: .9;
+  left: 4%;
+  position: relative;
+}
+.page-1 {
+  margin-top: 10px;
+  width: 35px;
+  height: 15px;
+  border-radius:20px;
+  margin-left: 10px;
+  background:black;
+  text-align: center;
+}
+.page-1 p {
+  color: white;
+  font-family: impact;
+}
+
+.page-2 {
+  margin-top:20px;
+  width: 35px;
+  height: 15px;
+  margin-left:10px;
+  border-radius: 20px;
+  text-align: center;
+  left: 5px;
+  background:black;
+}
+.page-2 p {
+  color: white;
+  font-family: impact;
+}
+
+
+#images {
+  position: relative;
+  float:right;
+  margin-top: -50px;
+}
+
+#images table {
+  margin: auto;
+}
+
+.gallery {
+  display: none;
+  visibility: hidden;
+}
+
+#images table img {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  transition: width, height;
+  transition-duration: 1s;
+  -webkit-transition: width, height;
+  -webkit-transition-duration: 1s;
+  -moz-transition: width, height;
+  -moz-transition-duration: 1s;
+  -o-transition: width, height;
+  -o-transition-duration: 1s;
+}
+
+#images table img:hover {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+/* --------------
+Footer
+---------------------*/
+
+#footer {
+  padding: 3em 1em;
+  z-index: 1;
+  text-align: center;
+  float: left;
+  width: 100%;
+  font-size: .3em;
+  overflow: hidden;
+}
+
+#footer h1 {
+  color: orange;
+  font-family: sans-serif;
+}
