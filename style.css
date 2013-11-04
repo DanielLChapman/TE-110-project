@@ -19,8 +19,11 @@ INDEX PAGE
 
 #logo {
   width: 1000px;
+  position: absolute;
+  left: 46%;
   height: 150px;
   letter-spacing: -2px;
+  margin-left: 25%;
 }
 
 #logo a{
@@ -66,6 +69,8 @@ td {
   background-color:orange;
   box-shadow: 10px;
   padding:20px;
+  width: 300px;
+  height: 300px;
   border-spacing: 50px;
 
 }
