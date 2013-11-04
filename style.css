@@ -1,6 +1,7 @@
 body {
   background-color:rgb(168,209,255);
     background-size: cover;
+    opacity: 50%;
 }
 
 a {
@@ -64,7 +65,7 @@ table {
 }
 
 td {
-
+  background-color:orange;
   border: 5px solid orange;
 
 }
