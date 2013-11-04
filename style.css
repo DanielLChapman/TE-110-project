@@ -52,19 +52,19 @@ Contact
 #content {
   float: left;
   position: absolute;
-  left: 10%;
-  top: 10%;
+  left: 20%;
+  top: 30%;
   border: 10px solid black;
 }
 
 table {
-  left: 5%;
   top: 5%;
+  padding: 20px;
   position: relative;
 }
 
 td {
-  
+
   border: 5px solid orange;
 
 }
