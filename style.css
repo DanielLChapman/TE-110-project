@@ -1,5 +1,5 @@
 body {
-  background-color:#009999;
+  background-color:#33CCCC;
     background-size: cover;
     opacity: 50%;
 }
@@ -25,7 +25,7 @@ INDEX PAGE
 }
 
 #logo a{
-  color: #FF0000;
+  color: #BF3030;
   text-decoration: none;
 }
 
@@ -34,7 +34,7 @@ h3 {
   position: relative;
   margin: 0;
   color: #FF0000;
-  font-family: Optima;
+  font-family: Impact;
   font-weight: 200;
   font-size: 3em;
 }
@@ -73,7 +73,7 @@ table h3 {
 
 }
 td {
-  background-color:#FFAA00;
+  background-color:#FB8F30;
   width: 200px;
   height: 200px;
 
