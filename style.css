@@ -54,7 +54,7 @@ Contact
 #content {
   float: left;
   position: absolute;
-  left: 15%;
+  left: 20%;
   top: 10%;
 
 }
@@ -83,6 +83,9 @@ td {
 
 }
 
+td div {
+  box-shadow: 10px;
+}
 /* --------------
 Footer
 ---------------------*/
