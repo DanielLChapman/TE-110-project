@@ -1,7 +1,7 @@
 //= require vendor/jquery
 
   $(document).ready(function(){
-      $('#standard').click(function() {
+      $('.test').click(function() {
         var $active = $('.md-modal');
         $active.addClass('.md-show');
       });
