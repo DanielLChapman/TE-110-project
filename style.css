@@ -61,7 +61,8 @@ Contact
 
 table {
   top: 5%;
-  position: relative;
+  border-spacing: 0;
+  border-collapse: 0;
 }
 
 table h3 {
