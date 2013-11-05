@@ -98,7 +98,6 @@ Modal
     height: auto;
     z-index: 2000;
     visibility: hidden;
-    backface-visibility: hidden;
     transform: translateX(-50%) translateY(-50%);
 }
  
