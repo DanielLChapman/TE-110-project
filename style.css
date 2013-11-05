@@ -61,7 +61,7 @@ Contact
 
 table {
   top: 5%;
-  border-spacing: 0;
+  border-spacing: 50px;
   border-collapse: 0;
 }
 
@@ -79,7 +79,7 @@ td {
   box-shadow: 10px;
   width: 200px;
   height: 200px;
-  border-spacing: 50px;
+
 
 }
 
