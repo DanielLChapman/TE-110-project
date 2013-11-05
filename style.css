@@ -1,5 +1,5 @@
 body {
-  background-color:rgb(168,209,255);
+  background-color:#009999;
     background-size: cover;
     opacity: 50%;
 }
@@ -18,16 +18,14 @@ INDEX PAGE
 }
 
 #logo {
-  background-color: black;
   position: absolute;
   left: 15%;
-  height: 150px;
   letter-spacing: -2px;
   margin-left: 25%;
 }
 
 #logo a{
-  color: white;
+  color: #FF0000;
   text-decoration: none;
 }
 
@@ -35,7 +33,7 @@ INDEX PAGE
 h3 {
   position: relative;
   margin: 0;
-  color: white;
+  color: #FF0000;
   font-family: Optima;
   font-weight: 200;
   font-size: 3em;
@@ -75,14 +73,14 @@ table h3 {
 
 }
 td {
-  background-color:orange;
+  background-color:#FFAA00;
   width: 200px;
   height: 200px;
 
 
 }
 
-#clickables {
+#clickables div {
   box-shadow: 0px 0px 100px #888888;
 }
 /* --------------
