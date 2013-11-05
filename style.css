@@ -15,6 +15,7 @@ INDEX PAGE
 
 #top {
   height: 150px;
+  border-bottom: 5px dashed black;
 }
 
 #logo {
