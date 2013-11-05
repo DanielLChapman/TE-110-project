@@ -18,9 +18,9 @@ INDEX PAGE
 }
 
 #logo {
-  width: 5000px;
+  width: 500px;
   position: absolute;
-  left: 26%;
+  left: 20%;
   height: 150px;
   letter-spacing: -2px;
   margin-left: 25%;
@@ -55,7 +55,7 @@ Contact
   float: left;
   position: absolute;
   left: 15%;
-  top: 30%;
+  top: 10%;
 
 }
 
