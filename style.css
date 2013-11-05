@@ -20,7 +20,7 @@ INDEX PAGE
 #logo {
   width: 500px;
   position: absolute;
-  left: 18%;
+  left: 15%;
   height: 150px;
   letter-spacing: -2px;
   margin-left: 25%;
@@ -36,7 +36,7 @@ h3 {
   position: relative;
   margin: 0;
   color: white;
-  font-family: Impact;
+  font-family: Optima;
   font-weight: 200;
   font-size: 3em;
 }
@@ -64,11 +64,20 @@ table {
   position: relative;
 }
 
+table h3 {
+  position: relative;
+  margin: 0;
+  color: white;
+  font-family: Impact;
+  font-weight: 200;
+  font-size: 2em;
+
+}
 td {
   background-color:orange;
   box-shadow: 10px;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-spacing: 50px;
 
 }
