@@ -1,6 +1,4 @@
-//= require vendor/jquery
 
-  $(document).ready(function(){
       $('.test').click(function() {
         var $active = $('.md-modal');
         $active.addClass('.md-show');
@@ -13,4 +11,3 @@
         var $active = $('.md-modal');
         $active.removeClass('.md-show');
       });
-    });
