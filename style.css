@@ -90,8 +90,8 @@ Modal
 */
 .md-modal {
     position: fixed;
-    top: 35%;
-    left: 35%;
+    top: 20%;
+    left: 20%;
     width: 50%;
     max-width: 630px;
     min-width: 320px;
