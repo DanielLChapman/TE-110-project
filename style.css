@@ -97,12 +97,11 @@ Modal
     height: auto;
     z-index: 2000;
      background: rgba(143,27,15,1);
-    visibility: hidden;
     transform: translateX(-50%) translateY(-50%);
 }
  
 .md-show {
-    visibility: visible;
+    Display: block;
 }
  
 .md-overlay {

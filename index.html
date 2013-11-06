@@ -8,27 +8,28 @@
   <script type="text/javascript" src="/js/style.js"> </script>
   <script>
   function addClass() {
-    document.getElementById('modal-1').style.visibility=true;
+    $('.md-modal').show();
   };
-
-  function removeClass() {
-    var el = document.getElementById('md-show');
-    el.classname -= 'md-show';
+function removeClass() {
+    $('.md-modal').hide();
   };
+  $( document ).ready(function() {
+     $('.md-modal').hide();
+});
   </script>
 </head>
 <body>
-  <div id = "top">  <h3 id = "logo"> <a href="index.html">INSERT TITLE</a> </h3></div>
+  <div id = "top">  <h3 id = "logo"> <a href="index.html">INSERT TITLE</a> </h3></dav>
   <div class="container">
     <div class="drop"></div>
-  <div class="md-modal" id="modal-1">
+  <div class="md-modal" id="modal1">
     <div class="md-content">
         <h3>Modal Dialog</h3>
         <div>
             <p>This is a modal window. You can do the following things with it:</p>
             <ul>
                 <li><strong>Read:</strong> Modal windows will probably tell you something important so don't forget to read what it says.</li>
-                <li><strong>Look:</strong> modal windows enjoy a certain kind of attention; just look at it and appreciate its presence.</li>
+                <li><strong>Look:</strong> modal windows enjoy a certaain kind of attention; just look at it and appreciate its presence.</li>
                 <li><strong>Close:</strong> click on the button below to close the modal.</li>
             </ul>
             <button class="md-close" onclick="removeClass()">Close me!</button>
