@@ -15,7 +15,6 @@ INDEX PAGE
 
 #top {
   height: 75px;
-  border-bottom: 5px dashed black;
 }
 
 #logo {
@@ -90,14 +89,14 @@ Modal
 */
 .md-modal {
     position: fixed;
-    top: 20%;
-    left: 20%;
+    top: 25%;
+    left: 25%;
     width: 50%;
     max-width: 630px;
     min-width: 320px;
     height: auto;
     z-index: 2000;
-     background: rgba(143,27,15,0.8);
+     background: rgba(143,27,15,1);
     visibility: hidden;
     transform: translateX(-50%) translateY(-50%);
 }
