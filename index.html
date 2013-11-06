@@ -9,7 +9,7 @@
   <script>
   function addClass() {
     var el = document.getElementById('modal-1');
-    el.classname += 'md-show';
+    el.visibility = true;
   };
 
   function removeClass() {
@@ -40,7 +40,7 @@
       <div id = "menu">
         <table id = "clickables">
           <tr>
-            <td class = "test"><div id = "standard" onclick="addClass()">
+            <td class = "test" onclick="addClass()"><div id = "standard">
               <h3>Standard View</h3>
             </div></td>
               <td><div id = "standard"><h3>Standard View</h3></div></td>
