@@ -1,13 +1,9 @@
+      function modalWindow() {
+        var $active = $('.md-modal');
+        $active.addClass('.md-show');
+      };
 
-      $('.test').click(function() {
-        var $active = $('.md-modal');
-        $active.addClass('.md-show');
-      });
-      $('#menu').click(function() {
-        var $active = $('.md-modal');
-        $active.addClass('.md-show');
-      });
-      $('.md-cose').click(function() {
+      function close() {
         var $active = $('.md-modal');
         $active.removeClass('.md-show');
-      });
+      };
