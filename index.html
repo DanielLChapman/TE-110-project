@@ -1,64 +1,536 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset=utf-8 />
-  <title> TE 110 </title>
-  <link rel="stylesheet" href="style.css" />
-  <script type="text/javascript" src="jquery-1.10.1.js"></script> 
-  <script type="text/javascript" src="/js/style.js"> </script>
-  <script>
-  function addClass() {
-    $('.md-modal').show();
-  };
-function removeClass() {
-    $('.md-modal').hide();
-  };
-  $( document ).ready(function() {
-     $('.md-modal').hide();
-});
-  </script>
-</head>
-<body>
-  <div id = "top">  <h3 id = "logo"> <a href="index.html">INSERT TITLE</a> </h3></dav>
-  <div class="container">
-    <div class="drop"></div>
-  <div class="md-modal" id="modal1">
-    <div class="md-content">
-        <h3>Modal Dialog</h3>
-        <div>
-            <p>This is a modal window. You can do the following things with it:</p>
-            <ul>
-                <li><strong>Read:</strong> Modal windows will probably tell you something important so don't forget to read what it says.</li>
-                <li><strong>Look:</strong> modal windows enjoy a certaain kind of attention; just look at it and appreciate its presence.</li>
-                <li><strong>Close:</strong> click on the button below to close the modal.</li>
-            </ul>
-            <button class="md-close" onclick="removeClass()">Close me!</button>
-        </div>
-    </div>
-  </div>
-  <div id = "content">
-      <div id = "menu">
-        <table id = "clickables">
-          <tr>
-            <td class = "test" onclick="addClass()"><div id = "standard">
-              <h3>Standard View</h3>
-            </div></td>
-              <td><div id = "standard"><h3>Standard View</h3></div></td>
+    <head>
+        <meta charset=utf-8 />
+        <title> TE 110 </title>
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript" src="jquery-1.10.1.js"></script> 
+        <script type="text/javascript" src="/js/style.js"></script>
+        <script>
+            function addClass() {
+                $('.md-modal-1').show();
+                document.getElementById('content').style.opacity = .5;
+            }
+            ;
+            function addClass2() {
+                $('.md-modal-2').show();
+                document.getElementById('content').style.opacity = .5;
+            }
+            ;
+            function addClass3() {
+                $('.md-modal-3').show();
+                document.getElementById('content').style.opacity = .5;
+            }
+            ;
+            function addClass4() {
+                $('.md-modal-4').show();
+                document.getElementById('content').style.opacity = .5;
+            }
+            ;
+            function addClass5() {
+                $('.md-modal-5').show();
+                document.getElementById('content').style.opacity = .5;
+            }
+            ;
+            function addClass6() {
+                $('.md-modal-6').show();
+                document.getElementById('content').style.opacity = .5;
+            }
+            ;
+            function removeClass() {
+                $('.md-modal-1').hide();
+                $('.md-modal-2').hide();
+                $('.md-modal-3').hide();
+                $('.md-modal-4').hide();
+                $('.md-modal-5').hide();
+                $('.md-modal-6').hide();
+                document.getElementById('content').style.opacity = 1;
+            }
+            ;
+            $(document).ready(function() {
+                $('.md-modal-1').hide();
+                $('.md-modal-2').hide();
+                $('.md-modal-3').hide();
+                $('.md-modal-4').hide();
+                $('.md-modal-5').hide();
+                $('.md-modal-6').hide();
+            });
+        </script>
+        <script>
+            function quizSubmit() {
+                var standard = 0;
+                var sleepwalking = 0;
+                var determinism = 0;
+                var utopian = 0;
+                var luddism = 0;
+                var fetishism = 0;
+                var anthropological = 0;
+                if (document.getElementById('RESULT_RadioButton-1_0').checked) {
+                    standard = standard + 4;
+                    sleepwalking = sleepwalking + 2;
+                    determinism = determinism + 5;
+                    utopian = utopian + 5;
+                    luddism = luddism - 2;
+                    fetishism = fetishism + 2;
+                    anthropological = anthropological + 5;
+                }
 
-                <td><div id = "standard"><h3>Standard View</h3></div></td>
-          </tr>
-          <tr>
-            <td><div id = "standard"><h3>Standard View</h3></div></td>
-              <td><div id = "standard"><h3>Standard View</h3></div></td>
-                <td><div id = "standard"><h3>Standard View</h3></div></td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-    <div id = "footer">
-      <h1>© <a href="https://github.com/RustyRadio/" >RustyRadio</a> 2013. Source code located on github page. Free to use, spread and change.</h1>
-    </div>
-</body>
+                if (document.getElementById('RESULT_RadioButton-1_1').checked) {
+                    standard = standard - 3;
+                    sleepwalking = sleepwalking + 1;
+                    determinism = determinism - 4;
+                    utopian = utopian - 3;
+                    luddism = luddism + 2;
+                    fetishism = fetishism - 1;
+                    anthropological = anthropological + 1;
+                }
+
+                if (document.getElementById('RESULT_RadioButton-2_0').checked) {
+                    standard = standard + 1;
+                    sleepwalking = sleepwalking - 1;
+                    determinism = determinism + 1;
+                    utopian = utopian + 2;
+                    luddism = luddism - 2;
+                    fetishism = fetishism + 1;
+                    anthropological = anthropological + 3;
+                }
+
+                if (document.getElementById('RESULT_RadioButton-2_1').checked) {
+                    standard = standard - 1;
+                    sleepwalking = sleepwalking + 3;
+                    determinism = determinism - 1;
+                    utopian = utopian - 1;
+                    luddism = luddism + 2;
+                    fetishism = fetishism + 1;
+                    anthropological = anthropological - 3;
+                }
+
+                if (document.getElementById('Radio-0').selected) {
+                    standard = standard + 1;
+                    sleepwalking = sleepwalking + 1;
+                    determinism = determinism - 1;
+                    utopian = utopian - 1;
+                    luddism = luddism + 1;
+                    fetishism = fetishism - 1;
+                    anthropological = anthropological - 2;
+                }
+
+                if (document.getElementById('Radio-1').selected) {
+                    standard = standard + 1;
+                    sleepwalking = sleepwalking - 1;
+                    determinism = determinism + 1;
+                    utopian = utopian + 1;
+                    luddism = luddism - 1;
+                    fetishism = fetishism + 1;
+                    anthropological = anthropological + 1;
+                }
+
+                if (document.getElementById('Radio-2').selected) {
+                    standard = standard + 2;
+                    sleepwalking = sleepwalking - 2;
+                    determinism = determinism + 4;
+                    utopian = utopian + 3;
+                    luddism = luddism - 2;
+                    fetishism = fetishism + 1;
+                    anthropological = anthropological + 3;
+                }
+
+                if (document.getElementById('Radio-3').selected) {
+                    standard = standard + 1;
+                    sleepwalking = sleepwalking + 2;
+                    determinism = determinism - 1;
+                    utopian = utopian;
+                    luddism = luddism + 2;
+                    fetishism = fetishism - 2;
+                    anthropological = anthropological - 2;
+                }
+
+                if (document.getElementById('Radio-4').selected) {
+                    standard = standard + 2;
+                    sleepwalking = sleepwalking - 1;
+                    determinism = determinism + 1;
+                    utopian = utopian + 1;
+                    luddism = luddism;
+                    fetishism = fetishism + 1;
+                    anthropological = anthropological + 2;
+                }
+
+                if (document.getElementById('Radio-5').selected) {
+                    standard = standard + 3;
+                    sleepwalking = sleepwalking - 2;
+                    determinism = determinism + 3;
+                    utopian = utopian + 2;
+                    luddism = luddism - 1;
+                    fetishism = fetishism + 1;
+                    anthropological = anthropological + 3;
+                }
+
+                if (document.getElementById('RESULT_RadioButton-5_0').checked) {
+                    standard = standard + 2;
+                    sleepwalking = sleepwalking - 1;
+                    determinism = determinism + 2;
+                    utopian = utopian + 2;
+                    luddism = luddism - 2;
+                    fetishism = fetishism + 1;
+                    anthropological = anthropological + 1;
+                }
+
+                if (document.getElementById('RESULT_RadioButton-5_1').checked) {
+                    standard = standard - 2;
+                    sleepwalking = sleepwalking + 1;
+                    determinism = determinism - 2;
+                    utopian = utopian - 2;
+                    luddism = luddism + 2;
+                    fetishism = fetishism - 1;
+                    anthropological = anthropological - 1;
+                }
+
+                if (document.getElementById('RESULT_RadioButton-6_0').checked) {
+                    standard = standard + 2;
+                    sleepwalking = sleepwalking - 2;
+                    determinism = determinism + 2;
+                    utopian = utopian + 5;
+                    luddism = luddism - 4;
+                    fetishism = fetishism + 1;
+                    anthropological = anthropological + 3;
+                }
+
+                if (document.getElementById('RESULT_RadioButton-6_1').checked) {
+                    standard = standard - 1;
+                    sleepwalking = sleepwalking + 1;
+                    determinism = determinism + 1;
+                    utopian = utopian - 5;
+                    luddism = luddism + 3;
+                    fetishism = fetishism - 1;
+                    anthropological = anthropological - 1;
+                }
+
+                if (document.getElementById('RESULT_RadioButton-7_0').checked) {
+                    standard = standard + 1;
+                    sleepwalking = sleepwalking + 2;
+                    determinism = determinism - 1;
+                    utopian = utopian - 3;
+                    luddism = luddism + 6;
+                    fetishism = fetishism - 2;
+                    anthropological = anthropological + 1;
+                }
+
+                if (document.getElementById('RESULT_RadioButton-7_1').checked) {
+                    standard = standard + 1;
+                    sleepwalking = sleepwalking - 2;
+                    determinism = determinism + 1;
+                    utopian = utopian + 1;
+                    luddism = luddism - 6;
+                    fetishism = fetishism + 2;
+                    anthropological = anthropological + 2;
+                }
+
+                if (document.getElementById('RESULT_RadioButton-8_0').checked) {
+                    standard = standard + 1;
+                    sleepwalking = sleepwalking - 3;
+                    determinism = determinism + 2;
+                    utopian = utopian + 1;
+                    luddism = luddism - 3;
+                    fetishism = fetishism + 2;
+                    anthropological = anthropological + 3;
+                }
+
+                if (document.getElementById('RESULT_RadioButton-8_1').checked) {
+                    standard = standard;
+                    sleepwalking = sleepwalking + 4;
+                    determinism = determinism - 2;
+                    utopian = utopian - 1;
+                    luddism = luddism + 4;
+                    fetishism = fetishism - 2;
+                    anthropological = anthropological - 1;
+                }
+                if (document.getElementById('RESULT_RadioButton-9_0').checked) {
+                    standard = standard + 1;
+                    sleepwalking = sleepwalking + 3;
+                    determinism = determinism - 1;
+                    utopian = utopian - 2;
+                    luddism = luddism + 2;
+                    fetishism = fetishism - 2;
+                    anthropological = anthropological - 1;
+                }
+
+                if (document.getElementById('RESULT_RadioButton-9_1').checked) {
+                    standard = standard + 1;
+                    sleepwalking = sleepwalking - 1;
+                    determinism = determinism + 1;
+                    utopian = utopian + 1;
+                    luddism = luddism - 2;
+                    fetishism = fetishism + 2;
+                    anthropological = anthropological + 1;
+                }
+                if (document.getElementById('RESULT_RadioButton-10_0').checked) {
+                    standard = standard + 1;
+                    sleepwalking = sleepwalking - 2;
+                    determinism = determinism + 1;
+                    utopian = utopian + 1;
+                    luddism = luddism + 2;
+                    fetishism = fetishism + 2;
+                    anthropological = anthropological + 3;
+                }
+
+                if (document.getElementById('RESULT_RadioButton-10_1').checked) {
+                    standard = standard + 1;
+                    sleepwalking = sleepwalking + 3;
+                    determinism = determinism - 1;
+                    utopian = utopian - 1;
+                    luddism = luddism - 1;
+                    fetishism = fetishism - 1;
+                    anthropological = anthropological - 4;
+                }
+                if (document.getElementById('RESULT_RadioButton-11_0').checked) {
+                    standard = standard + 1;
+                    sleepwalking = sleepwalking ;
+                    determinism = determinism + 1;
+                    utopian = utopian + 1;
+                    luddism = luddism - 3;
+                    fetishism = fetishism + 4;
+                    anthropological = anthropological-3;
+                }
+
+                if (document.getElementById('RESULT_RadioButton-11_1').checked) {
+                    standard = standard + 2;
+                    sleepwalking = sleepwalking + 1;
+                    determinism = determinism + 3;
+                    utopian = utopian + 1;
+                    luddism = luddism + 1;
+                    fetishism = fetishism - 2;
+                    anthropological = anthropological+2;
+                }
+                if (standard < 0) {
+                    standard = 0;
+                }
+                if (sleepwalking < 0) {
+                    sleepwalking = 0;
+                }
+                if (utopian < 0) {
+                    utopian = 0;
+                }
+                if (luddism < 0) {
+                    luddism = 0;
+                }
+                if (determinism < 0) {
+                    determinism = 0;
+                }
+                if (fetishism < 0) {
+                    fetishism = 0;
+                }
+                if (anthropological < 0) {
+                    anthropological = 0;
+                }
+                var total = Math.abs(standard) + Math.abs(sleepwalking) + Math.abs(determinism) + Math.abs(utopian)+ Math.abs(luddism)+ Math.abs(fetishism)+ Math.abs(anthropological);
+                document.getElementById('results').innerHTML = "<h3 id='logo'>YOU ARE</h3><br /><br /><br /><br /><strong>Standard</strong>: " + (Math.abs(standard)/total)*100+"%" + "<br /><strong>Sleepwalking</strong>: " + (Math.abs(sleepwalking)/total)*100+"%" 
+                + "<br /><strong>Technological Determinism</strong>: " + (Math.abs(determinism)/total)*100+"%" + "<br /><strong>Utopian</strong>: " + (Math.abs(utopian)/total)*100+"%" 
+        + "<br /><strong>Luddism</strong>: " + (Math.abs(luddism)/total)*100+"%" + "<br /><strong>Fetishism</strong>: " + (Math.abs(fetishism)/total)*100+"%" + "<br /><strong>Anthropological</strong>: " + (Math.abs(anthropological)/total)*100+"%"
+                + "<h4>What These Numbers Mean:</h4><p>These numbers are based on factors established from this quick survey. Numbers are assigned to variables based on answers to questions. <br />If one of these variables go negative, then the % is 0. This isnt saying you have no feelings towards those views, just that their weight isnt enough to get a percent.</p>";
+            }
+        </script>
+    </head>
+    <body>
+        <div id = "top">  <h3 id = "logo"> <a href="index.html">VIEWS OF TECHNOLOGY</a> </h3></div>
+        <div class="md-modal md-modal-1" id="modal1">
+            <div class="md-content">
+                <h3>Standard View</h3>
+                <div>
+                    <p>This is the "standard" view, a "commonsense view". Mimics everyday Understanding</p>
+                    <ul>
+                        <li><strong>Does:</strong> This view states that all technology happens because of a necessity. If there is a need for the technology
+                            in society, then it will be created.</li>
+                        <li><strong>Does not:</strong> Standard view does not deny that technology is a human endeavor, technology is the end result to a problem</li>
+                        <li><strong>Believes:</strong> Technology is a tool that empowers societies and peoples to spread their voice and knowledge.</li>
+                    </ul>
+                    <button class="md-close" onclick="removeClass()">Close me!</button>
+                </div>
+            </div>
+        </div>
+        <div class="md-modal md-modal-2" id="modal1">
+            <div class="md-content">
+                <h3>Sleep Walking view</h3>
+                <div>
+                    <p>This is the view that we do not realize or find the importance of studying how much technology effects us</p>
+                    <ul>
+                        <li><strong>Does:</strong> Deny how much technology effects our everyday lives.</li>
+                        <li><strong>Does not:</strong> Does not study or give thought to the long term implications of our technology use.</li>
+                        <li><strong>Believes:</strong> That technology is just a tool to use when needed.</li>
+                    </ul>
+                    <button class="md-close" onclick="removeClass()">Close me!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="md-modal md-modal-3" id="modal1">
+            <div class="md-content">
+                <h3>Technological Determinism</h3>
+                <div>
+                    <p>This is the view that technology is a powerful tool that dictates the patterns of human social and cultural life</p>
+                    <ul>
+                        <li><strong>Does:</strong> Believe that technology drives the development of a society.</li>
+                        <li><strong>Does:</strong> Gives weight to the idea that a belief in determinism is linked to a belief in technological autonomy </li>
+                        <li><strong>Believes:</strong> That technology is out of control and we can not step back and examine the effects on our society.</li>
+                    </ul>
+                    <button class="md-close" onclick="removeClass()">Close me!</button>
+                </div>
+            </div>
+        </div>
+        <div class="md-modal md-modal-4" id="modal1">
+            <div class="md-content">
+                <h3>Technological Utopianism</h3>
+                <div>
+                    <p>This is the view that believes technology is the key to utopia.</p>
+                    <ul>
+                        <li><strong>Does:</strong> Believe that technology is a savior</li>
+                        <li><strong>Does:</strong> Worship technology to a religious level. </li>
+                        <li><strong>Believes:</strong> That a techno-utopia is possible and would solve the worlds problems, including death.</li>
+                    </ul>
+                    <button class="md-close" onclick="removeClass()">Close me!</button>
+                </div>
+            </div>
+        </div>
+        <div class="md-modal md-modal-5" id="modal1">
+            <div class="md-content">
+                <h3>Luddism and Neo-Luddism</h3>
+                <div>
+                    <p>This is the view that the followers resist technological change</p>
+                    <ul>
+                        <li><strong>Believes:</strong> Technology destroys the way of life</li>
+                        <li><strong>Does:</strong> Strive to abolish the spread of technology </li>
+                        <li><strong>Believes:</strong> That technology is expanding at a rate that it will be humans undoing.</li>
+                    </ul>
+                    <button class="md-close" onclick="removeClass()">Close me!</button>
+                </div>
+            </div>
+        </div>
+        <div class="md-modal md-modal-6" id="modal1">
+            <div class="md-content">
+                <h3>Fetishism & Anthropological</h3>
+                <div>
+                    <p>Fetishism: This is the view that technology is a superior power, godlike</p>
+                    <p>Anthropological: This is the view that technology cant be studied outside of culture contexts.</p>
+                    <ul>
+                        <li><strong>Fetishism Believes:</strong> Technology effects humans in ways that cannot be understood.</li>
+                        <li><strong>Anthropological Believes: </strong>The study of technology is more how it affects cultures and economies rather than how it is used.</li>
+                    </ul>
+                    <button class="md-close" onclick="removeClass()">Close me!</button>
+                </div>
+            </div>
+        </div>
+        <div id = "content">
+            <div id = "menu">
+                <table id = "clickables">
+                    <tr>
+                        <td class = "test" onclick="addClass()"><div id = "standard">
+                                <h3>Standard View</h3>
+                            </div></td>
+                        <td class = "test" onclick="addClass2()"><div id = "sleepwalking"><h3>Sleep Walking</h3></div></td>
+
+                        <td class = "test" onclick="addClass3()"><div id = "determinism"><h3>Technological Determinism</h3></div></td>
+                    </tr>
+                    <tr>
+                        <td class = "test" onclick="addClass4()"><div id = "Utopian"><h3>Utopian</h3></div></td>
+                        <td class = "test" onclick="addClass5()"><div id = "Luddism"><h3>Luddism</h3></div></td>
+                        <td class = "test" onclick="addClass6()"><div id = "Fetishism"><h3>Fetishism & Anthropological</h3></div></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="survey">
+                <h3 id="logo">Which one are you?</h3>
+                <br />
+                <br />
+                <br />
+                <label class="question left_question_first"><b>*</b> Is technology important to you?</label>
+                <input type="radio" name="RESULT_RadioButton-1" class="multiple_choice" id="RESULT_RadioButton-1_0" value="Radio-0" checked="checked" /><label for="RESULT_RadioButton-1_0" >Yes</label>
+                <input type="radio" name="RESULT_RadioButton-1" class="multiple_choice" id="RESULT_RadioButton-1_1" value="Radio-1" /><label for="RESULT_RadioButton-1_1" >No</label>
+                <br />
+                <br />
+
+                <label class="question left_question_first"><b>*</b> Does Technology Use differ between cultures</label>
+                <td><input type="radio" name="RESULT_RadioButton-2" class="multiple_choice" id="RESULT_RadioButton-2_0" value="Radio-0" checked="checked" /><label for="RESULT_RadioButton-2_0" >Yes</label>
+                <td><input type="radio" name="RESULT_RadioButton-2" class="multiple_choice" id="RESULT_RadioButton-2_1" value="Radio-1" /><label for="RESULT_RadioButton-2_1" >No</label>
+                    <br />
+                    <br />
+                    <label class="question top_question" for="RESULT_RadioButton-3"><b>*</b> How much does technology affect our culture</label>
+                    <select id="RESULT_RadioButton-3" name="RESULT_RadioButton-3" class="drop_down">
+                        <option></option>
+                        <option id="Radio-0">A little</option>
+                        <option id="Radio-1" selected="selected">Some</option>
+                        <option id="Radio-2">A lot</option>
+                    </select>
+                    <br />
+                    <br />
+                    <label class="question top_question" for="RESULT_RadioButton-4"><b>*</b> How much do Humans influence the need for technology</label>
+                    <select id="RESULT_RadioButton-4" name="RESULT_RadioButton-4" class="drop_down">
+                        <option></option>
+                        <option id="Radio-3">A little</option>
+                        <option id="Radio-4" selected="selected">Some</option>
+                        <option id="Radio-5">A lot</option>
+                    </select>
+                    <br />
+                    <br />
+                    <label class="question top_question"><b>*</b> Do you care about technology?</label>
+
+                    <input type="radio" name="RESULT_RadioButton-5" class="multiple_choice" id="RESULT_RadioButton-5_0" value="Radio-0" checked="checked" /><label for="RESULT_RadioButton-5_0" >Yes</label>
+
+                    <input type="radio" name="RESULT_RadioButton-5" class="multiple_choice" id="RESULT_RadioButton-5_1" value="Radio-1" /><label for="RESULT_RadioButton-5_1" >No</label>
+                    <br />
+                    <br />
+                    <label class="question top_question"><b>*</b> Can technology solve all problems human face?</label>
+
+                    <input type="radio" name="RESULT_RadioButton-6" class="multiple_choice" id="RESULT_RadioButton-6_0" value="Radio-0" checked="checked" /><label for="RESULT_RadioButton-6_0" >Yes</label>
+
+                    <input type="radio" name="RESULT_RadioButton-6" class="multiple_choice" id="RESULT_RadioButton-6_1" value="Radio-1" /><label for="RESULT_RadioButton-6_1" >No</label>
+                    <br />
+                    <br />
+                    <label class="question top_question"><b>*</b> Does technology spread to areas where it is not needed?</label>
+
+                    <input type="radio" name="RESULT_RadioButton-7" class="multiple_choice" id="RESULT_RadioButton-7_0" value="Radio-0" checked="checked" /><label for="RESULT_RadioButton-7_0" >Yes</label>
+
+
+                    <input type="radio" name="RESULT_RadioButton-7" class="multiple_choice" id="RESULT_RadioButton-7_1" value="Radio-1" /><label for="RESULT_RadioButton-7_1" >No</label>
+                    <br />
+                    <br />
+                    <label class="question top_question"><b>*</b> Is technology important to study?</label>
+
+                    <input type="radio" name="RESULT_RadioButton-8" class="multiple_choice" id="RESULT_RadioButton-8_0" value="Radio-0" checked="checked" /><label for="RESULT_RadioButton-8_0" >Yes</label>
+
+
+                    <input type="radio" name="RESULT_RadioButton-8" class="multiple_choice" id="RESULT_RadioButton-8_1" value="Radio-1" /><label for="RESULT_RadioButton-8_1" >No</label>
+                    <br /><br />
+                    <label class="question top_question"><b>*</b> Is technology just a tool?</label>
+
+                    <input type="radio" name="RESULT_RadioButton-9" class="multiple_choice" id="RESULT_RadioButton-9_0" value="Radio-0" checked="checked" /><label for="RESULT_RadioButton-9_0" >Yes</label>
+
+
+                    <input type="radio" name="RESULT_RadioButton-9" class="multiple_choice" id="RESULT_RadioButton-9_1" value="Radio-1" /><label for="RESULT_RadioButton-9_1" >No</label>
+                    <br />
+                    <br />
+                    <label class="question top_question"><b>*</b>Do you care about the long term implications of technology use?</label>
+
+                    <input type="radio" name="RESULT_RadioButton-10" class="multiple_choice" id="RESULT_RadioButton-10_0" value="Radio-0" checked="checked" /><label for="RESULT_RadioButton-10_0" >Yes</label>
+
+
+                    <input type="radio" name="RESULT_RadioButton-10" class="multiple_choice" id="RESULT_RadioButton-10_1" value="Radio-1" /><label for="RESULT_RadioButton-10_1" >No</label>
+                    <br />
+                    <br />
+                    <label class="question top_question"><b>*</b>Is technology otherworldly?</label>
+
+                    <input type="radio" name="RESULT_RadioButton-11" class="multiple_choice" id="RESULT_RadioButton-11_0" value="Radio-0" checked="checked" /><label for="RESULT_RadioButton-10_0" >Yes</label>
+
+
+                    <input type="radio" name="RESULT_RadioButton-11" class="multiple_choice" id="RESULT_RadioButton-11_1" value="Radio-1" /><label for="RESULT_RadioButton-10_1" >No</label>
+                    <br />
+                    <br />
+                    <input type="button" name="go" value="go" onclick="quizSubmit()" />
+                    <div id ="results"></div>
+
+            </div>
+        </div>
+        <div id = "footer">
+            <h1>© <a href="https://github.com/RustyRadio/" >RustyRadio</a> 2013. Source code located on github page. Free to use, spread and change.</h1>
+        </div>
+    </body>
 </html>
 
